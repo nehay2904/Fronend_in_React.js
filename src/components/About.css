@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&family=Dongle&family=Mochiy+Pop+P+One&family=Montserrat:ital,wght@1,500&family=Outfit:wght@300&family=Roboto+Mono:ital@1&display=swap');
+
+
+body{
+  
+  font-family: 'Montserret';
+}
+.container{
+  padding: 20px;
+}
+
+.col{
+   margin: 20px;
+}
+  .heading{
+    text-align: center;
+    font-weight: 900;
+    font-size: 28px;
+    padding: 20px;
+  }
+  .main-content{
+    text-align: center;
+    font-weight: 100;
+    font-size: 17px;
+  }
+ .col{
+   padding:0px 10px;
+ }
+ .container{
+   margin-top: 120px;
+   
+ }

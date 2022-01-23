@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&family=Dongle&family=Mochiy+Pop+P+One&family=Montserrat:ital,wght@1,500&family=Outfit:wght@300&family=Roboto+Mono:ital@1&display=swap');
+
+
+
+.reviews{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 100vh;
+   }
+.review-container{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+  .reviews-heading{
+   justify-content: center;
+   text-align: center;
+   align-items: center;
+   margin: 120px 0px 20px ;
+   font-size: 22px;
+   font-weight: bold;
+  }
+  
+  .reviews-image{
+    width: 45px;
+    height: 45px;
+    margin: 30px 5px;
+    border-radius: 50%;
+  }
+  .review-content{
+    text-align: center;
+  }
+  .symbol-image{
+    margin: 80px 20px;
+    width: 200px;
+  }
+  
+.review-agency1{
+    margin-top: 50px;
+    text-align: center;
+  }
+  .review-agency2{
+    text-align: center;
+  }
+  
+  .row{
+    justify-content: center;
+    margin: 20px 0px;
+  }
