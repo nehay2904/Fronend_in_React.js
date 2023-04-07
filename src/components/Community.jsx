@@ -16,11 +16,12 @@ const Community = () => {
         </div>
         <Fade bottom>
         <h1 className='com_title'>Join our platform today and become a part of our lifesaving community.</h1>
-        </Fade>
-        <div className="login_com2">
+           <div className="login_com">
             <input type="text" className='com_input' name="" id="" placeholder='Enter your email' />
              <button className='start_btn'>Submit</button>
            </div>
+        </Fade>
+    
     </div>
   )
 }

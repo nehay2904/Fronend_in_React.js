@@ -8,8 +8,14 @@ const Home = () => {
     <div className='home'>
        
         <div className="navbar">
-        <img src={Logo} className='logo_image' alt="" srcset="" />
+         <div className='nav_logo'>
+         <img src={Logo} className='logo_image' alt="" srcset="" />
          <h1 className='logo_h1'>BloodConnect</h1>
+         </div>
+         <div style={{display:"flex", flexDirection:"row"}}>
+          
+           <button className='start_btn'>Login</button>
+         </div>
         </div>
        <div className="body">
         <div className="left_body">
