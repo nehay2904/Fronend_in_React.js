@@ -1,31 +1,18 @@
-
-import React from 'react';
-import Carousel from './components/Carousel';
-import Navbar from './components/Navbar';
-import Reviews from './components/Reviews';
-import {SliderData} from './data/CarouselData';
-import {reviewData} from './data/reviewsData';
-import About from './components/About';
-import Info from './components/Info';
-import AboutKoral from './components/AboutKoral';
-import OurProjects from './components/OurProjects';
-import Footer from './components/Footer';
-
-function App() {
+import * as React from 'react';
+import Home from './components/Home';
+import './App.css'
+import Donar from './components/Donar';
+import Response from './components/Response';
+import Safe from './components/Safe';
+import Community from './components/Community';
+export default function App() {
   return (
-      <>
-         <Navbar />
-         <Carousel slides={SliderData}/>
-         <About />
-         <Info />
-         <AboutKoral />
-         <OurProjects />
-         
-        <Reviews reviews={reviewData}/>
-       
-      <Footer />
-      </>
+    <>
+    <Home />
+    <Donar />
+    <Response />
+    <Safe />
+    <Community />
+    </>
   );
 }
-
-export default App;
