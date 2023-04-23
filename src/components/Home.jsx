@@ -1,7 +1,7 @@
 import React from 'react'
 import Logo from '../download.png'
-import Home_logo from '../components/home_pic.jpg'
-
+import Home_logo from '.././Images/Bloodten.jpg'
+import { Link } from 'react-router-dom';
 import Fade from 'react-reveal/Fade';
 const Home = () => {
   return (
@@ -10,11 +10,12 @@ const Home = () => {
         <div className="navbar">
          <div className='nav_logo'>
          <img src={Logo} className='logo_image' alt="" srcset="" />
-         <h1 className='logo_h1'>BloodConnect</h1>
+         <h1 className='logo_h1'>Save Lives</h1>
          </div>
          <div style={{display:"flex", flexDirection:"row"}}>
-          
-           <button className='start_btn'>Login</button>
+         <Link style={{marginTop:7}}  to='register'><button className='start_btn'>Register as donor</button></Link>
+      
+           
          </div>
         </div>
        <div className="body">
@@ -31,11 +32,12 @@ const Home = () => {
         <h4 className='subtitle'>Connect with donars quickly and easily during life-threatening situations</h4>
        
         </Fade>
-        <button  className='start_btn'>Get started</button>
-           <div className="login">
+        <Link style={{marginTop:7}}  to='policy'> <button  className='start_btn'>Get started</button></Link>
+       
+           {/* <div className="login">
             <input type="text" className='input' name="" id="" placeholder='Enter your email' />
              <button className='start_btn'>Submit</button>
-           </div>
+           </div> */}
         </div>
         <div className="right_body">
           <img className='home_logo' src={Home_logo} alt="" srcset="" />
