@@ -1,11 +1,13 @@
 import React, {useState} from 'react'
 import { Link } from 'react-router-dom'
 import axios from 'axios'
+import Login from './Login'
 const Register = () => {
 
 
   const [donor_name, setdonor_name] = useState('')
   const [donor_email, setdonor_email]  = useState('')
+  const [password, setPassword]  = useState('')
   const [age, setage] = useState('')
   const [mobile_no, setmobile_no] = useState('')
   const [blood_group, setblood_group] = useState('')
@@ -19,6 +21,7 @@ const Register = () => {
  }
     const [postdata, setpostdata] = useState([{
       donor_name:"",
+      password:"",
       donor_email:"",
       age:"",
       mobile_no:"",
@@ -35,6 +38,7 @@ const Register = () => {
     axios.post('http://localhost:5000/moo', {
       donor_name,
       donor_email,
+      password,
       age,
       mobile_no,
       blood_group,
@@ -45,6 +49,7 @@ const Register = () => {
         setpostdata([...postdata, {
           donor_name,
           donor_email,
+          password,
           age,
           mobile_no,
           blood_group,
@@ -63,6 +68,7 @@ const Register = () => {
   setmobile_no("")
   setstate("")
   setcity("")
+  setPassword("")
 }
   return (
     <div className='register'>
@@ -76,6 +82,9 @@ const Register = () => {
           }} />
            <input className='input' type="email" name="" id=""  placeholder='Email ID' value={donor_email} onChange={(e) => {
             setdonor_email(e.target.value)
+          }}/>
+            <input className='input' type="password" name="" id=""  placeholder='Password' value={password} onChange={(e) => {
+            setPassword(e.target.value)
           }}/>
            <input className='input' type="text"  placeholder='Blood_group' value={blood_group} onChange={(e) => {
             setblood_group(e.target.value)
@@ -93,7 +102,7 @@ const Register = () => {
            <input  onClick={create_donors} onTouchEnd={click ? "subm" : "submon"} className='subm input' type="submit" value="submit" placeholder='Submit' />
            <Link  to='thanks'><button style={{display:"none", backgroundColor:"blue", textAlign:"center", color:"white"}} className='subm input' >Next</button></Link>        
         </div>
-     
+      <Link to='login'><h4 style={{color:'black', fontSize:21, marginTop:20}}>Already a user then login</h4></Link>
     </div>
   )
 }

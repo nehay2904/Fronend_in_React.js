@@ -1,0 +1,30 @@
+{/*     
+    <Router>
+           <div className="App">
+           <Routes>
+                 <Route exact path='/' element={< OverAll_Design />}></Route>
+                 {/* <Route  path='search_donor' element={< Option/>}></Route> */}
+                 <Route  path='/register' element={< Register />}></Route>
+                 <Route  path='/policy' element={< Policy/>}></Route>
+                 <Route  path='policy/list_donor' element={< Find_donor/>}></Route>
+                 <Route  path='/register/thanks' element={< Thanks/>}></Route>
+          </Routes>
+          </div>
+       </Router> */}
+
+
+
+       <!-- {postdata.map((donor) => (
+              <TableRow
+                
+                sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
+              >
+                <TableCell component="th" scope="row">
+                  {donor.donor_name}
+                </TableCell>
+                <TableCell align="right">{donor.age}</TableCell>
+                <TableCell align="right">{donor.blood_group}</TableCell>
+                <TableCell align="right">{donor.state}</TableCell>
+                <TableCell align="right">{donor.city}</TableCell>
+              </TableRow>
+            ))} -->

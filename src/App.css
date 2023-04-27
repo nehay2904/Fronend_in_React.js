@@ -35,9 +35,9 @@
   letter-spacing: 2px;
   line-height: 50px;
 }
-.subtitle{
-  padding: 35px 0px;
-  font-size: 22px;
+.subtitles{
+  padding: 15px 0px;
+  font-size: 20px;
 }
 
 .logo_image{
@@ -275,7 +275,13 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding: 30px;
+  margin: 30px;
+  /* width: 100%; */
   /* background-color: aqua; */
+}
+.tables{
+  width: 100%;
 }
 .lists{
   margin-top: 30px;
@@ -320,12 +326,7 @@ flex-direction: column;
 .foot_sec{
   margin: 0px  50px;
 }
-.donors{
-  /* display: flex; */
-  display: grid;
-  place-items: center;
-  grid-template-columns: repeat(4,1fr);
-}
+
 /* MEDIA QUERY */
 @media (max-width: 900px){
   .home{
@@ -490,9 +491,11 @@ flex-direction: column;
     align-items: center;
     text-align: center;
   }
+  
   .donors{
     display: flex;
     flex-direction: column;
+    width: 100%;
   }
   .com_input{
     width: 200px;
@@ -506,4 +509,17 @@ flex-direction: column;
   .thanks_h1{
     font-size: 16px;
   }
+  .con{
+    text-align: center;
+  }
+  .footer{
+ 
+    padding: 1% 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+   }
 }

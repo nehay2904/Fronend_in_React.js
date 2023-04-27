@@ -29,9 +29,10 @@ const Home = () => {
        
         </Fade>
         <Fade bottom>
-        <h4 className='subtitle'>Connect with donars quickly and easily during life-threatening situations</h4>
+        <h4 className='subtitles'>Connect with donars quickly and easily during life-threatening situations</h4>
        
         </Fade>
+        <h6 style={{ marginBottom:20}}>*** save lives is not a blood bank and does not involves in collection storage and transportation of blood ***</h6>
         <Link style={{marginTop:7}}  to='policy'> <button  className='start_btn'>Get started</button></Link>
        
            {/* <div className="login">
