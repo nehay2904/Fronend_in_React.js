@@ -49,7 +49,7 @@
   border: none;
   background-color: black;
   color: whitesmoke;
-  padding:13px 19px;
+  padding:10px 12px;
   border-radius: 5px;
 }
 .input{
@@ -326,6 +326,20 @@ flex-direction: column;
 .foot_sec{
   margin: 0px  50px;
 }
+.request{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   height: 100vh;
+
+}
+.reqform{
+   width: 35%;
+   height: 65vh;
+   background-color: aqua;
+   padding: 20px 12px;
+}
 
 /* MEDIA QUERY */
 @media (max-width: 900px){
@@ -382,7 +396,7 @@ flex-direction: column;
     border: none;
     background-color: black;
     color: whitesmoke;
-    padding:9px 15px;
+    padding:7px 7px;
     border-radius: 5px;
   }
   .input{
@@ -390,7 +404,7 @@ flex-direction: column;
     /* padding: 40px 52px; */
     padding: 0px 20px;
     width: 300px;
-    margin-top: 16px;
+    margin-top: 16px ;
   }
   .login{
     margin-top: 50px;
@@ -513,7 +527,7 @@ flex-direction: column;
     text-align: center;
   }
   .footer{
- 
+    height: 100vh;
     padding: 1% 0%;
     display: flex;
     flex-direction: column;

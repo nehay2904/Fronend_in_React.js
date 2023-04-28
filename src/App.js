@@ -16,6 +16,7 @@ import Policy from './components/Policy';
 import BasicTable from './Material_com/Tables';
 import Forms from './Material_com/Forms';
 import Login from './components/Login';
+import Request from './components/Request';
 
 
 
@@ -31,7 +32,8 @@ export default function App() {
                  <Route  path='register/login' element={< Login/>}></Route>
                  <Route  path='/policy' element={< Policy/>}></Route>
                  <Route  path='policy/list_donor' element={< Find_donor/>}></Route>
-                 <Route  path='/register/thanks' element={< Thanks/>}></Route>
+                 <Route  path='list_donor/request' element={< Request/>}></Route>
+                 {/* <Route  path='/register/thanks' element={< Thanks/>}></Route> */}
           </Routes>
           </div>
        </Router>

@@ -14,12 +14,7 @@ const Register = () => {
   const [state, setstate] = useState('')
   const [city, setcity] = useState('')
 
- const [click, setclick] = useState('')
-
- const ChangeHandler =()=>{
-   setclick(!click)
- }
-    const [postdata, setpostdata] = useState([{
+  const [postdata, setpostdata] = useState([{
       donor_name:"",
       password:"",
       donor_email:"",
@@ -99,7 +94,7 @@ const Register = () => {
             setcity(e.target.value)
           }} />
          
-           <input  onClick={create_donors} onTouchEnd={click ? "subm" : "submon"} className='subm input' type="submit" value="submit" placeholder='Submit' />
+           <input  onClick={create_donors}  className='subm input' type="submit" value="submit" placeholder='Submit' />
            <Link  to='thanks'><button style={{display:"none", backgroundColor:"blue", textAlign:"center", color:"white"}} className='subm input' >Next</button></Link>        
         </div>
       <Link to='login'><h4 style={{color:'black', fontSize:21, marginTop:20}}>Already a user then login</h4></Link>

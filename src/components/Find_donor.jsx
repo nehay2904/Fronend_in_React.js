@@ -135,7 +135,8 @@ const Find_donor = () => {
                 <TableCell >{donor.blood_group}</TableCell>
                 <TableCell >{donor.state}</TableCell>
                 <TableCell >{donor.city}</TableCell>
-                <Button style={{ marginTop: 10 }} size="small" variant="contained" color="success">Request</Button>
+                 <Link to='/list_donor/request'><Button style={{ marginTop: 10 }} size="small" variant="contained" color="success">Request</Button>
+               </Link>
               </TableRow>
 
             </TableBody>
