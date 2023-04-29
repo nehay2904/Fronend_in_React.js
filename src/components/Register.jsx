@@ -30,7 +30,7 @@ const Register = () => {
     
     event.preventDefault()
 
-    alert('Your response is submitted the donor will contact u soon')
+    alert('Your response is submitted the appropriate donor will contact u soon')
 
     axios.post('http://localhost:5000/moo', {
       donor_name,
