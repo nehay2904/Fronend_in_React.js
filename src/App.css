@@ -536,4 +536,21 @@ flex-direction: column;
     text-align: center;
     
    }
+   
+.policy{
+  display: flex;
+  flex-direction: column;
+  height: 210vh;
+  padding: 10px;
+  background: rgb(255, 255, 119);
+  /* text-align: center;
+  justify-content: center; */
+  
+}
+.lists{
+  margin-top: 30px;
+   min-width: 110%;
+  height: 90vh;
+   padding: 0px;
+}
 }

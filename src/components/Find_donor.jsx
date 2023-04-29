@@ -109,8 +109,8 @@ const Find_donor = () => {
       <div className="lists">
         <h4 className='donor_title'>Find the donor in emergency situations</h4>
         <div className="donors">
-        <TableContainer className='tablesq' >
-            <Table  aria-label="simple table">
+        <TableContainer className='tables' >
+            <Table className='main_table'  aria-label="large table">
               <TableHead >
                 <TableRow>
                   <TableCell>Name</TableCell>
