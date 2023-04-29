@@ -95,10 +95,11 @@ const Register = () => {
           }} />
          
            <input  onClick={create_donors}  className='subm input' type="submit" value="submit" placeholder='Submit' />
-           <Link  to='thanks'><button style={{display:"none", backgroundColor:"blue", textAlign:"center", color:"white"}} className='subm input' >Next</button></Link>        
+         
         </div>
-      <Link to='login'><h4 style={{color:'black', fontSize:21, marginTop:20}}>Already a user then login</h4></Link>
-    </div>
+        <Link to='/'> <button style={{marginTop:20, width:100}} className='home_btn btn' >Go back</button>
+            </Link>
+        </div>
   )
 }
 
