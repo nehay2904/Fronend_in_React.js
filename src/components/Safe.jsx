@@ -2,6 +2,7 @@ import React from 'react'
 import image from '../components/secure.jpg'
 
 import Fade from 'react-reveal/Fade';
+import { Link } from 'react-router-dom';
 
 const Safe = () => {
   return (
@@ -13,7 +14,7 @@ const Safe = () => {
         <Fade left>
              <h1 className='donor_tit'>Safe and Secure</h1>
              <h6 className='donor_sub'>Our platform ensures complete privacy and confidentiality for all involved parties, protecting donor and recipient information</h6>
-             <button className='start_btn btn_start'>Our Security Policy</button>
+              <Link to='/policy'><button className='start_btn btn_start'>Our Security Policy</button></Link>
         </Fade>
             
                 </div>

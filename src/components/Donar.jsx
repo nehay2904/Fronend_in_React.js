@@ -2,6 +2,7 @@ import React from 'react'
 import image from '../components/donor.jpg'
 
 import Fade from 'react-reveal/Fade';
+import { Link } from 'react-router-dom';
 const Donar = () => {
   return (
     <div className="donor">
@@ -15,8 +16,8 @@ const Donar = () => {
              
         </Fade>
            <div>
-             <button className='start_btn'>REGISTER AS DONOR</button>
-     
+             
+             <Link  to='register'><button className='start_btn'>REGISTER AS DONOR</button></Link>
              </div>
                 </div>
     </div>

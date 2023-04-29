@@ -17,6 +17,7 @@ import BasicTable from './Material_com/Tables';
 import Forms from './Material_com/Forms';
 import Login from './components/Login';
 import Request from './components/Request';
+import About from './components/About';
 
 
 
@@ -31,6 +32,7 @@ export default function App() {
                  <Route  path='/register' element={< Register />}></Route>
                  <Route  path='register/login' element={< Login/>}></Route>
                  <Route  path='/policy' element={< Policy/>}></Route>
+                 <Route  path='/about' element={< About/>}></Route>
                  <Route  path='policy/list_donor' element={< Find_donor/>}></Route>
                  <Route  path='list_donor/request' element={< Request/>}></Route>
                  {/* <Route  path='/register/thanks' element={< Thanks/>}></Route> */}

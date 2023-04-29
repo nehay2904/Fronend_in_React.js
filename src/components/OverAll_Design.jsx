@@ -4,6 +4,7 @@ import Donar from './Donar'
 import Safe from './Safe'
 import Response from './Response'
 import Footer from './Footer'
+import Community from './Community'
 
 const OverAll_Design = () => {
   return (
@@ -12,6 +13,7 @@ const OverAll_Design = () => {
     <Donar />
     <Safe />
     <Response />
+    <Community />
     <Footer/>
    
     </>

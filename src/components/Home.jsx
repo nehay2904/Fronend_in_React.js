@@ -32,8 +32,8 @@ const Home = () => {
         <h4 className='subtitles'>Connect with donars quickly and easily during life-threatening situations</h4>
        
         </Fade>
-        <h6 style={{ marginBottom:20}}>*** save lives is not a blood bank and does not involves in collection storage and transportation of blood ***</h6>
-        <Link style={{marginTop:7}}  to='policy'> <button  className='start_btn'>Get started</button></Link>
+        <h6 style={{ marginBottom:20}}> <span style={{color:"red"}}>*** </span> save lives is not a blood bank and does not involves in collection storage and transportation of blood  <span style={{color:'red'}}>*** </span> </h6>
+        <Link style={{marginTop:7}}  to='policy'> <button  className='start_btn'>Find a donor</button></Link>
        
            {/* <div className="login">
             <input type="text" className='input' name="" id="" placeholder='Enter your email' />
