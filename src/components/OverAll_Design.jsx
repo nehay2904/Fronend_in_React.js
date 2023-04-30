@@ -5,6 +5,7 @@ import Safe from './Safe'
 import Response from './Response'
 import Footer from './Footer'
 import Community from './Community'
+import Feedback from './Feedback'
 
 const OverAll_Design = () => {
   return (
@@ -14,6 +15,7 @@ const OverAll_Design = () => {
     <Safe />
     <Response />
     <Community />
+    <Feedback />
     <Footer/>
    
     </>
