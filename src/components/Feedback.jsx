@@ -19,7 +19,7 @@ const Feedback = () => {
         event.preventDefault()
     
          alert("Our Feedback will be appreiated")
-        axios.post('http://localhost:5000/feedback', {
+        axios.post('https://neha1268.onrender.com/feedback', {
             username,
             feedback,
      
@@ -38,7 +38,7 @@ const Feedback = () => {
     }
   return (
      <div className="request">
-        <div className="reqform" style={{backgroundColor:"gray"}}>
+        <div className="feedbackform" style={{backgroundColor:"gray"}}>
             <h2 style={{marginBottom:20}}> Feedback form</h2>
             <input className='input' type="text" placeholder='Name' value={username} onChange={(e)=>{
                 setusername(e.target.value)

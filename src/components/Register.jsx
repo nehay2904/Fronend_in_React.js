@@ -32,7 +32,7 @@ const Register = () => {
 
     alert('Your response is submitted the appropriate donor will contact u soon')
 
-    axios.post('http://localhost:5000/moo', {
+    axios.post('https://neha1268.onrender.com/moo', {
       donor_name,
       donor_email,
       password,

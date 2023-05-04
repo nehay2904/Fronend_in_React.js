@@ -37,7 +37,7 @@ const Find_donor = () => {
     event.preventDefault()
 
 
-    axios.post('http://localhost:5000/moo', {
+    axios.post('https://neha1268.onrender.com/moo', {
       donor_name,
       donor_email,
       age,
@@ -71,7 +71,7 @@ const Find_donor = () => {
   }
 
   useEffect(() => {
-    axios.get('http://localhost:5000/foo').then((response) => {
+    axios.get('https://neha1268.onrender.com/foo').then((response) => {
       setpostdata(response.data)
     })
 

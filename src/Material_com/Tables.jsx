@@ -22,8 +22,8 @@ export default function BasicTable({ donor_name,
             <TableCell>Name</TableCell>
             <TableCell >Age</TableCell>
             <TableCell >Blood group</TableCell>
+            <TableCell >State</TableCell>
             <TableCell >City</TableCell>
-            <TableCell >state</TableCell>
           
           </TableRow>
         </TableHead>
