@@ -30,9 +30,9 @@ const Register = () => {
     
     event.preventDefault()
 
-    alert('Your response is submitted the appropriate donor will contact u soon')
+    alert('Your response is submitted u r a life saver')
 
-    axios.post('https://neha1268.onrender.com/moo', {
+    axios.post('https://neha-y1003.onrender.com/moo', {
       donor_name,
       donor_email,
       password,
@@ -66,6 +66,8 @@ const Register = () => {
   setstate("")
   setcity("")
   setPassword("")
+
+  
 }
   return (
     <div className='register'>
@@ -80,27 +82,67 @@ const Register = () => {
            <input className='input' type="email" name="" id=""  placeholder='Email ID' value={donor_email} onChange={(e) => {
             setdonor_email(e.target.value)
           }}/>
-            <input className='input' type="password" name="" id=""  placeholder='Password' value={password} onChange={(e) => {
+            {/* <input className='input' type="password" name="" id=""  placeholder='Password' value={password} onChange={(e) => {
             setPassword(e.target.value)
-          }}/>
-           <input className='input' type="text"  placeholder='Blood_group' value={blood_group} onChange={(e) => {
+          }}/> */}
+           {/* <input className='input' type="text"  placeholder='Blood_group' value={blood_group} onChange={(e) => {
             setblood_group(e.target.value)
-          }} />
+          }} /> */}
+          <select style={{marginTop:7, padding:7}} name="" id=""  value={blood_group} onChange={(e) => {
+            setblood_group(e.target.value)
+          }} >
+             <option value="">please select your blood group</option>
+            <option value="O+">O+</option>
+            <option value="A+">A+</option>
+            <option value="B+">B+</option>
+            <option value="AB+">AB+</option>
+           
+            <option value="O-">O-</option>
+            <option value="A-">A-</option>
+            <option value="B-">B-</option>
+            <option value="AB-">AB-</option>
+          </select>
            <input className='input' type="text" placeholder='Mobile_no' value={mobile_no} onChange={(e) => {
             setmobile_no(e.target.value)
           }} />
-           <input className='input' type="text"  placeholder='State' value={state} onChange={(e) => {
+           {/* <input className='input' type="text"  placeholder='State' value={state} onChange={(e) => {
             setstate(e.target.value)
           }} />
            <input className='input' type="text"  placeholder='City' value={city} onChange={(e) => {
             setcity(e.target.value)
-          }} />
+          }} /> */}
+          <select style={{marginTop:7, padding:7}} name="" id=""   value={state} onChange={(e) => {
+            setstate(e.target.value)
+          }}>
+             <option value="">please select your state</option>
+            <option value="TELANGANA">TELANGANA</option>
+        
+           
+          </select>
+          <select style={{marginTop:7, padding:7}} name="" id=""   value={city} onChange={(e) => {
+            setcity(e.target.value)
+          }}  >
+             <option value="">please select your city</option>
+            <option value="ADILABAD">ADILABAD</option>
+            <option value="HYDERABAD">HYDERABAD</option>
+            <option value="KARIMNAGAR">KARIMNAGAR</option>
+            <option value="WARANGAL">WARANGAL</option>
+            <option value="KHAMMAM">KHAMMAM</option>
+            <option value="MEDAK">MEDAK</option>
+            <option value="NALGONDA">NALGONDA</option>
+            <option value="NIZAMABAD">NIZAMABAD</option>
+            <option value="RANGAREDDY">RANGAREDDY</option>
+            <option value="MEHBOOBNAGAR">MEHBOOBNAGAR</option>
+ 
+          </select>
          
            <input  onClick={create_donors}  className='subm input' type="submit" value="submit" placeholder='Submit' />
-         
         </div>
+        <h6>we are currently accepting the entries of telangana state</h6>
+       
         <Link to='/'> <button style={{marginTop:20, width:100}} className='home_btn btn' >Go back</button>
             </Link>
+          
         </div>
   )
 }

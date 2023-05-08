@@ -336,7 +336,7 @@ flex-direction: column;
 }
 .reqform{
    width: 35%;
-   height: 65vh;
+   height: 75vh;
    background-color: aqua;
    padding: 20px 12px;
 }
@@ -356,9 +356,17 @@ flex-direction: column;
 
 .reqabout{
   width: 30%;
+  flex-direction: column;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.privacy{
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  
+
 }
 
 /* MEDIA QUERY */
@@ -577,6 +585,7 @@ flex-direction: column;
 .reqabout{
   width: 80%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }

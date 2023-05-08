@@ -12,7 +12,7 @@ const Policy = () => {
           <h6 style={{lineHeight:1.6, fontSize:17}}>5. And the use of this information must be used for the relevent purpose eg for live saving</h6>
       </div>
   <div style={{display:"flex"}}>
-  <Link to='list_donor'><div><button style={{backgroundColor:"green"}}  className='btn' >Accept</button></div></Link>
+      <Link to='/request'><div><button style={{backgroundColor:"green"}}  className='btn' >Accept</button></div></Link>
       <Link to='/'><div><button style={{backgroundColor:"red" , marginLeft:10}}  className='btn' >Back</button></div></Link>
     
     </div>  

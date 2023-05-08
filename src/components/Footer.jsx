@@ -19,8 +19,7 @@ const Footer = () => {
     <Link to='about'> <h6 style={{color:"white", marginBottom:20}}>About</h6></Link>
     </div>
     <div className="foot_sec">
-    <a href=""> <h6 style={{color:"white", marginBottom:20}}>Privacy policy</h6></a>
-       
+    <Link to='/privacy'><h6 style={{color:"white", marginBottom:20}}>Our privacy policy</h6></Link>
         
     </div>
     <div className="foot_sec">

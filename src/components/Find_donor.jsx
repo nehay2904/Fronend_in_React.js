@@ -37,7 +37,7 @@ const Find_donor = () => {
     event.preventDefault()
 
 
-    axios.post('https://neha1268.onrender.com/moo', {
+    axios.post('https://neha-y1003.onrender.com/moo', {
       donor_name,
       donor_email,
       age,
@@ -71,7 +71,7 @@ const Find_donor = () => {
   }
 
   useEffect(() => {
-    axios.get('https://neha1268.onrender.com/foo').then((response) => {
+    axios.get('https://neha-y1003.onrender.com/data').then((response) => {
       setpostdata(response.data)
     })
 
@@ -116,8 +116,9 @@ const Find_donor = () => {
                   <TableCell>Name</TableCell>
                   <TableCell >Age</TableCell>
                   <TableCell >Blood group</TableCell>
-                  <TableCell >City</TableCell>
+                  <TableCell >Mobile no</TableCell>
                   <TableCell >state</TableCell>
+                  <TableCell >city</TableCell>
 
                 </TableRow>
               </TableHead>
@@ -133,10 +134,10 @@ const Find_donor = () => {
                 </TableCell>
                 <TableCell >{donor.age}</TableCell>
                 <TableCell >{donor.blood_group}</TableCell>
+                <TableCell >{donor.mobile_no}</TableCell>
                 <TableCell >{donor.state}</TableCell>
                 <TableCell >{donor.city}</TableCell>
-                 <Link to='/list_donor/request'><Button style={{ marginTop: 10 }} size="small" variant="contained" color="success">Request</Button>
-               </Link>
+             
               </TableRow>
 
             </TableBody>

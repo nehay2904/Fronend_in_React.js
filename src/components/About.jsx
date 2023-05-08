@@ -8,6 +8,13 @@ const About = () => {
      <div className="about">
              <div className="reqabout"> 
                Our website connect the donors with the people who are in need of the blood and fulfill the requirement. It is not a blood bank. it is a brigde between the donor and the blood reciver. The motive is to try at the best to fulfill the blood requirement
+             
+             <div>
+             <Link to='/'> <button style={{marginTop:20, width:100}} className='home_btn btn' >Go back</button>
+            </Link>
+             </div>
+           
+          
              </div>
      </div>
   )
