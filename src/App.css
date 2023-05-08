@@ -85,9 +85,6 @@
    width: 40%;
 }
 
-.don_l{
-
-}
 
 .donor_img{
   width: 500px;
@@ -230,7 +227,7 @@
 }
 
 .input{
-  min-width: 100%;
+  width: 100%;
   margin-top: 7px;
   border: none;
 }
@@ -298,7 +295,7 @@
 .policy{
   display: flex;
   flex-direction: column;
-  height: 110vh;
+  height: 100vh;
   padding: 60px;
   background: rgb(255, 255, 119);
   /* text-align: center;
@@ -411,6 +408,13 @@ flex-direction: column;
     width: 400px;
     height: 300px;
   }
+  .contain{
+    width: 100%;
+    /* background-color: blue; */
+    min-height: 110vh;
+    margin-bottom: 120px;
+  }
+  
   .subtitle{
     padding: 13px 0px;
     font-size: 19px;
@@ -431,7 +435,7 @@ flex-direction: column;
     margin-right: 10px;
     /* padding: 40px 52px; */
     padding: 0px 20px;
-    width: 300px;
+    width: 100%;
     margin-top: 16px ;
   }
   .login{
@@ -565,10 +569,11 @@ flex-direction: column;
     
    }
    
+
 .policy{
   display: flex;
   flex-direction: column;
-  height: 210vh;
+  height: 140vh;
   padding: 10px;
   background: rgb(255, 255, 119);
   /* text-align: center;
@@ -592,6 +597,12 @@ flex-direction: column;
 .feedbackform{
   width: 95%;
   height: 65vh;
+  background-color: aqua;
+  padding: 20px 12px;
+}
+.reqform{
+  width: 95%;
+  height: 75vh;
   background-color: aqua;
   padding: 20px 12px;
 }
