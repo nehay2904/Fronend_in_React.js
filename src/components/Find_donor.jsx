@@ -32,12 +32,14 @@ const Find_donor = () => {
     city: ""
   }])
 
+     
+
   const create_donors = (event) => {
 
     event.preventDefault()
 
 
-    axios.post('https://neha-y1003.onrender.com/moo', {
+    axios.post('https://mongodb-server-lmts.onrender.com/moo', {
       donor_name,
       donor_email,
       age,
@@ -70,12 +72,13 @@ const Find_donor = () => {
     setcity("")
   }
 
+
   useEffect(() => {
-    axios.get('https://neha-y1003.onrender.com/data').then((response) => {
+    axios.get('https://mongodb-server-lmts.onrender.com/data').then((response) => {
       setpostdata(response.data)
     })
 
-  }, [])
+  }, [10000])
 
 
   return (
@@ -148,7 +151,7 @@ const Find_donor = () => {
 
         </div>
         <div style={{ marginTop: 30 }}>
-          <Link style={{ marginTop: 7 }} to='/'>  <button className='home_btn btn'>GO Back</button></Link>
+          <Link style={{ marginTop: 7 }} to='/'>  <button className='home_btn btn' >GO Back</button></Link>
 
         </div>
       </div>

@@ -4,7 +4,7 @@ import { Link, useNavigate } from 'react-router-dom';
 
 
 
-const Register = () => {
+const Update= () => {
 
 
     const [donor_name, setdonor_name] = useState('')
@@ -37,7 +37,7 @@ const Register = () => {
 
         alert('Your response is submitted u r a life saver')
 
-        axios.post('https://mongodb-server-lmts.onrender.com/register', {
+        axios.post('https://mongodb-server-lmts.onrender.com/update', {
             donor_name,
             donor_email,
             password,
@@ -77,15 +77,14 @@ const Register = () => {
         setcity("")
         setPassword("")
 
-        navigate('/');
+        navigate('/register');
 
 
     }
     return (
 
         <form style={{ display: 'flex', flexDirection: "column", justifyContent: "center", alignItems: 'center' }} onSubmit={create_donors}>
-            <h5 style={{marginTop:20, marginBottom:20}}>Register here and  become the  life saver </h5>
-            <p>(Currently now we are working on telangana state)</p>
+            <h5 style={{marginTop:20, marginBottom:20}}>Edit profile</h5>
             <input
                className='inputs'
                 type="email"
@@ -166,10 +165,9 @@ const Register = () => {
  
           </select>
         
-            <button type="submit" className='btn'>Register</button>
-            <p>Aready registered ? please <Link to={'/login'}>Login</Link></p>
+            <button type="submit" className='btn'>Update</button>
         </form>
     )
 }
 
-export default Register
+export default Update

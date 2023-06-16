@@ -1,67 +1,89 @@
-import React, { useState, useEffect } from 'react'
-import { Link } from 'react-router-dom'
-import axios from 'axios'
-import { WifiLock } from '@mui/icons-material'
+import React, { useState } from 'react';
+import axios from 'axios';
+import { Link, useNavigate } from 'react-router-dom';
 
 
 
 const Login = () => {
 
-
-  const [donor_email, setdonor_email] = useState('')
-  const [password, setPassword] = useState('')
-
-  const [postdata, setpostdata] = useState([{
-
-    password: "",
-    donor_email: "",
-
-  }])
-
-  const create_donors = (event) => {
-    event.preventDefault()
-
-      axios.post('http://localhost:5000/login', {
-        donor_email,
-        password,
-
-      }).then((response) => {
-
-        setpostdata([...postdata, {
-          donor_email,
-          password
-        }])
-
-      })
+    const [donor_email, setdonor_email] = useState('')
+    const [password, setPassword] = useState('')
+    
 
 
+    const [postdata, setpostdata] = useState([{
+       
+        password: "",
+        donor_email: "",
+      
+    }])
+ 
+    const navigate = useNavigate();
+    const create_donors = (event) => {
 
-    setdonor_email("")
-    setPassword("")
+       
 
-  }
+        event.preventDefault()
 
+        alert('Your response is submitted u r a life saver')
 
-
-  return (
-    <div className='register'>
-      <div className="box">
-        <h5>Login Here as a donor & save a life</h5>
-
-        <input className='input' type="email" name="" id="" placeholder='Email ID' value={donor_email} onChange={(e) => {
-          setdonor_email(e.target.value)
-        }} />
-        <input className='input' type="password" name="" id="" placeholder='Password' value={password} onChange={(e) => {
-          setPassword(e.target.value)
-        }} />
+        axios.post('https://mongodb-server-lmts.onrender.com/login', {
+        
+            donor_email,
+            password
+        }).then((response) => {
 
 
-        <input onClick={create_donors} className='subm input' type="submit" value="submit" placeholder='Submit' />
+            setpostdata([...postdata, {
+              
+                donor_email,
+                password,
+              
+            }])
 
-      </div>
 
-    </div>
-  )
+        }
+        )
+
+
+
+
+
+    
+        setdonor_email("")
+        setPassword("")
+
+        navigate('/');
+
+
+    }
+    return (
+
+        <form style={{ display: 'flex', flexDirection: "column", justifyContent: "center", alignItems: 'center' }} onSubmit={create_donors}>
+            <h5 style={{marginTop:20, marginBottom:20}}>Login here and  become the  life saver </h5>
+            <p>(Currently now we are working on telangana state)</p>
+            <input
+               className='inputs'
+                type="email"
+                placeholder="Email"
+                value={donor_email}
+                onChange={(e) => setdonor_email(e.target.value)}
+                required
+            />
+         
+            <input
+                type="Password"
+                placeholder="Password"
+                className='inputs'
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                required
+            />
+        
+            <button type="submit" className='btn'>Login</button>
+            <p style={{marginTop:20}}>Not registered  yet? please <Link to={'/register'}>register</Link></p>
+        </form>
+    )
 }
 
 export default Login

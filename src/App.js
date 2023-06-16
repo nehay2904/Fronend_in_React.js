@@ -15,6 +15,9 @@ import Login from './components/Login';
 import Request from './components/Request';
 import About from './components/About';
 import Privacy from './components/Privacy';
+import Dash from './components/Dash';
+import Profile from './components/Profile';
+import Update from './components/Update';
 
 
 
@@ -32,8 +35,11 @@ export default function App() {
                  <Route  path='/request' element={< Request/>}></Route>
                  <Route  path='/privacy' element={< Privacy/>}></Route>
                  <Route  path='/find_donor' element={< Find_donor/>}></Route>
-                 {/* <Route  path='/register/thanks' element={< Thanks/>}></Route> */}
-          </Routes>
+                 <Route  path='/dashboard' element={< Dash/>}></Route>
+                 <Route  path='/profile' element={< Profile/>}></Route>
+                 <Route  path='/update' element={<Update/>}></Route>
+                 <Route  path='/login' element={<Login/>}></Route>
+         </Routes>
           </div>
        </Router>
     </>
